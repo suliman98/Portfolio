@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import TopNavigation from './components/TopNavigation';
+import Routes from './components/Routes';
+import BottomNavigation from "./components/BottomNavigation";
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopNavigation />
+      <Routes />
+      <BottomNavigation />
     </div>
-  );
+  )
 }
 
 export default App;
